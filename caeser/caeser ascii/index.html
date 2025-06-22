@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full ASCII Caesar Cipher</title>
+</head>
+<body>
+    <h2>Caesar Cipher (Full ASCII Shift)</h2>
+
+    <p>
+        ⚠️ Note: The shift value should be between <strong>1 and 94</strong>.<br>
+        This range covers all printable ASCII characters (from ASCII 32 to 126).
+    </p>
+
+    <form action="ascii_cipher.php" method="post">
+        <label for="message">Enter your message:</label><br>
+        <textarea name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="shift">Enter shift value (1 to 94):</label><br>
+        <input type="number" name="shift" min="1" max="94" required><br><br>
+
+        <label for="action">Choose action:</label><br>
+        <select name="action" required>
+            <option value="encrypt">Encrypt</option>
+            <option value="decrypt">Decrypt</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
