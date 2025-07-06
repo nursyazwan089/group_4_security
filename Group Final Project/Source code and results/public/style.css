@@ -1,0 +1,35 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #0d1117;
+    color: #fff;
+}
+
+.form-control,
+.form-select {
+    background-color: #161b22;
+    color: #fff;
+    border: none;
+}
+
+.form-control:focus {
+    background-color: #161b22;
+    color: #fff;
+    box-shadow: none;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+textarea.form-control {
+    height: calc(1.5em * 10);
+    resize: none;
+}
+
+textarea.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+    font-weight: 300;
+    font-style: italic;
+    opacity: 1;
+}
